@@ -5,6 +5,9 @@ void main()
     i = 10;
     k = 0;
     j = 100;
+    printf("Please input a=%d and b=%d\n");
+    scanf("a=%d",&i);
+    scanf("b=%d",&j);
     for(i=1;i<j;i++);
     {
     printf("%d+",i);
