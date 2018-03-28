@@ -1,19 +1,26 @@
 #include <stdio.h>
+# include<stdlib.h>
 void main()
 {
     int i,j,k;
-    i = 10;
-    k = 0;
-    j = 100;
-    printf("Please input a=%d and b=%d\n");
-    scanf("a=%d",&i);
-    scanf("b=%d",&j);
-    for(i=1;i<j;i++);
-    {
-    printf("%d+",i);
-    k = k + i;
-    } 
+	k = 0;
+    printf("Please input\na= ");
+    scanf_s("%d",&i);
+	//getchar();
+	printf("b= ");
+	scanf_s("%d",&j);
+	//printf("\n");
+    for(i=i;i<j;i++)
+		{
+		printf("%d+",i);
+		k = k + i;
+		if ((i % 10) == 0)
+			{
+			printf("\n");
+			}
+		} 
     k = k + j;    
-    printf("%d=%d",j,k);    
-    printf("%d+...%d=%d\n",i,j,k);
+    printf("%d=%d\n",j,k);    
+    //printf("%d+...%d=%d\n",i,j,k);
+	system("pause");
 }
